@@ -1,5 +1,5 @@
 .header {
-    font-size: 50;
+    font-size: 50px;
     justify-content: center;
     display: flex;
 }
@@ -16,10 +16,7 @@
 }
 
 .menu .link {
-    margin: 10;
+    margin: 10px;
 }
 
-.image-container img {
-    max-width: 350;
-    max-height: 350;
-}
+

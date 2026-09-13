@@ -1,27 +1,36 @@
-﻿@{
+﻿@using HotelReservation.Models.Hotel
+@model List<hotelViewModel>
+
+@{
     Layout = "~/Views/Shared/_LayoutHotel.cshtml";
 }
 
+@section Styles{
+    <link href="~/css/Hotel/hotelBookingSpeical.css" rel="stylesheet" />
+}
 <a href="/HotelBooking/CreateOrderHotelBooking">HotelBooking</a>
-<link href="/css/hotelBooking.css" rel="stylesheet" />
 
-<div class="box-container">
 
-  <div class="red box">
-      red
-  </div>
-
-  <div class="green box">
-      green
-  </div>
-
-  <div class="red box">
-      red
-  </div>
-
-  <div class="green box">
-      green
-  </div>
-
+<div class="hotels">
+    @foreach (var hotel in Model)
+    {
+        <div class="hotel">
+            <div class="name">
+                @hotel.Name
+            </div>
+            <div class="image-container">
+                <img src="@hotel.Src" />
+            </div>
+            <div class="buttons">
+                <div class="button">
+                    Забронировать
+                </div>
+                <div class="price">
+                    170000 руб
+                </div>
+            </div>
+        </div>
+    }
 </div>
+
 

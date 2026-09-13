@@ -1,6 +1,7 @@
 ﻿<html>
 <head>
-    <link href="/css/hotelBooking.css" rel="stylesheet" />
+    <link href="~/css/Hotel/hotelBooking.css" rel="stylesheet" />
+    @RenderSection("Styles", false)
 </head>
 <body>
 <div class="header">
@@ -8,8 +9,12 @@
 </div>
 <div class="menu-and-content">
         <div class="menu">
-            link1
-            link2
+            <div class="link">
+                link1
+            </div>
+            <div class="link">
+                link1
+            </div>
         </div>
         <div class="content">  
             @RenderBody()

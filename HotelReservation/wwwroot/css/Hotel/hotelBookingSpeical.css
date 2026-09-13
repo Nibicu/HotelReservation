@@ -1,0 +1,39 @@
+.image-container img {
+    max-width: 350;
+    max-height: 350;
+    margin: 10;
+}
+
+.name{
+    display:flex;
+    justify-content: center;
+}
+
+.hotels {
+    display: flex;
+}
+.hotel {
+    margin: 5px;
+}
+
+.buttons {
+    display: flex;
+}
+
+    .buttons .button {
+        flex: 1;
+        background: gold;
+        display: flex;
+        justify-content: center;
+        margin: 4px;
+        border-radius: 4px;
+    }
+
+    .buttons .price {
+        flex: 1;
+        background: gold;
+        display: flex;
+        justify-content: center;
+        margin: 4px;
+        border-radius:4px;
+    }
